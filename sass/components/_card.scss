@@ -17,7 +17,7 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
     &--front {
-      background-color: #fff;
+      background-color: $color-white;
       -webkit-transform: rotateY(0deg);
       transform: rotateY(0deg);
     }
