@@ -1,11 +1,10 @@
 .form {
   form__group {
-    border: solid 3px red;
+
   }
 
   &__group:not(:last-child) {
     margin-bottom: 2rem;
-    border: solid 3px red;
   }
 
   &__input {
