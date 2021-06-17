@@ -1,3 +1,10 @@
+/*
+$breakpoint argument choices
+-phone
+-tablet
+-big-descktop
+
+ */
 *,
 *::after,
 *::before {
@@ -7,6 +14,21 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 30%; } }
+
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
@@ -460,7 +482,8 @@ body {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: 9999; }
+  z-index: 9999;
+  display: none; }
   .popup__content {
     position: absolute;
     top: 50%;
