@@ -21,11 +21,29 @@
     z-index: 2000;
     box-shadow: 0 1rem 3rem rgba($color-black, .1);
     text-align: center;
+    @include respond(tab-port){
+      top:4.5rem;
+      right: 4.5rem;
+    }
+
+    @include respond(phone){
+      top:3rem;
+      right:3rem;
+    }
   }
 
   &__background {
     height: 6rem;
     width: 6rem;
+    @include respond(tab-port){
+      top:4.5rem;
+      right: 4.5rem;
+    }
+
+    @include respond(phone){
+      top:3.5rem;
+      right: 3.5rem;
+    }
     border-radius: 50%;
     position: fixed;
     top: 6.5rem;
